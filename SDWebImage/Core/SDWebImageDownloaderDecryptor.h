@@ -47,3 +47,11 @@ A downloader response modifier class with block.
 @property (class, readonly, nonnull) SDWebImageDownloaderDecryptor *base64Decryptor;
 
 @end
+
+/// Convenience way to create decryptor for common data encryption.
+@interface SDWebImageDownloaderDecryptor (ConveniencesXX)
+
+/// XX Encoded image data decryptor
+@property (class, readonly, nonnull) SDWebImageDownloaderDecryptor *XXDecryptor;
+
+@end
